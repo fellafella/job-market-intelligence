@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Zone brute alimentée par le pipeline Python (aucune transformation).
+    schema: raw
+    tables:
+      - name: jobs_raw
+        description: Une ligne par offre et par jour de collecte (payload JSON d'origine).
+        loaded_at_field: extracted_at
+        freshness:
+          warn_after: {count: 2, period: day}
+          error_after: {count: 7, period: day}
+        columns:
+          - name: job_id
+            data_tests:
+              - not_null
+          - name: payload
+            data_tests:
+              - not_null

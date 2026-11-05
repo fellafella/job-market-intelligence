@@ -1,0 +1,17 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+
+# Données brutes collectées (zone "raw" du data lake local)
+data/raw/*
+!data/raw/.gitkeep
+
+.DS_Store

@@ -1,0 +1,22 @@
+name: jobmarket
+version: "1.0.0"
+config-version: 2
+profile: jobmarket
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+models:
+  jobmarket:
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      +materialized: table
+      +schema: marts
+
+seeds:
+  jobmarket:
+    +schema: reference

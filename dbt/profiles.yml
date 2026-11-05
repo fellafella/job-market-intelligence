@@ -1,0 +1,12 @@
+jobmarket:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('WAREHOUSE_HOST', 'localhost') }}"
+      port: "{{ env_var('WAREHOUSE_PORT', '5432') | as_number }}"
+      user: "{{ env_var('WAREHOUSE_USER', 'jobs') }}"
+      password: "{{ env_var('WAREHOUSE_PASSWORD', 'jobs') }}"
+      dbname: "{{ env_var('WAREHOUSE_DB', 'warehouse') }}"
+      schema: analytics
+      threads: 4

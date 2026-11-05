@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: jobs
+          POSTGRES_PASSWORD: jobs
+          POSTGRES_DB: warehouse
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U jobs -d warehouse"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      WAREHOUSE_HOST: localhost
+      WAREHOUSE_PORT: "5432"
+      WAREHOUSE_DB: warehouse
+      WAREHOUSE_USER: jobs
+      WAREHOUSE_PASSWORD: jobs
+      RAW_DATA_DIR: ${{ runner.temp }}/raw
+      DBT_PROFILES_DIR: dbt
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Lint
+        run: ruff check src tests dags
+
+      - name: Tests Python (unitaires + intégration PostgreSQL)
+        run: pytest -q
+
+      - name: Pipeline d'ingestion sur les données d'exemple
+        run: python -m jobmarket.pipeline --sample
+
+      - name: dbt build (seed, modèles et tests de qualité)
+        run: dbt build --project-dir dbt

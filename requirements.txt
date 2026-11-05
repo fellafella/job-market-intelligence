@@ -1,0 +1,7 @@
+# Développement local et CI (dans Docker, Airflow fournit déjà requests/pydantic/psycopg2)
+requests>=2.31
+pydantic>=2.6
+psycopg2-binary>=2.9
+pytest>=8.0
+ruff>=0.5
+dbt-postgres~=1.8.0

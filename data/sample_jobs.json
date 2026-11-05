@@ -1,0 +1,132 @@
+{
+  "jobs": [
+    {
+      "id": 1001,
+      "url": "https://example.com/jobs/1001",
+      "title": "Senior Data Engineer",
+      "company_name": "Acme Analytics",
+      "category": "Data",
+      "job_type": "full_time",
+      "publication_date": "2026-10-28T09:15:00",
+      "candidate_required_location": "Worldwide",
+      "salary": "$110k - $140k",
+      "description": "<p>Build and maintain ELT pipelines with <b>Python</b>, SQL, dbt and Airflow on AWS. Experience with Snowflake or BigQuery and Docker is required. Kafka is a plus.</p>"
+    },
+    {
+      "id": 1002,
+      "url": "https://example.com/jobs/1002",
+      "title": "Data Analyst",
+      "company_name": "Northwind Labs",
+      "category": "Data",
+      "job_type": "full_time",
+      "publication_date": "2026-10-29T14:00:00",
+      "candidate_required_location": "Europe",
+      "salary": "€45,000 - 60,000",
+      "description": "<p>Turn data into insights using SQL, Power BI, Tableau and Excel. Python (pandas) is a nice to have.</p>"
+    },
+    {
+      "id": 1003,
+      "url": "https://example.com/jobs/1003",
+      "title": "Junior Data Engineer",
+      "company_name": "Pipeline Co",
+      "category": "Data",
+      "job_type": "full_time",
+      "publication_date": "2026-10-30T08:30:00",
+      "candidate_required_location": "USA Only",
+      "salary": "",
+      "description": "<p>Entry-level role. You will write Python and SQL, use Git, learn Airflow, PostgreSQL and Docker.</p>"
+    },
+    {
+      "id": 1004,
+      "url": "https://example.com/jobs/1004",
+      "title": "Machine Learning Engineer",
+      "company_name": "Neural Works",
+      "category": "Data",
+      "job_type": "contract",
+      "publication_date": "2026-10-30T16:45:00",
+      "candidate_required_location": "Worldwide",
+      "salary": "$130k - $170k",
+      "description": "<p>Deploy machine learning and LLM services. Python, PyTorch, Docker, Kubernetes and AWS. CI/CD experience expected.</p>"
+    },
+    {
+      "id": 1005,
+      "url": "https://example.com/jobs/1005",
+      "title": "Lead Data Engineer (Streaming)",
+      "company_name": "Streamly",
+      "category": "Data",
+      "job_type": "full_time",
+      "publication_date": "2026-10-31T10:00:00",
+      "candidate_required_location": "Europe",
+      "salary": "€90k - €120k",
+      "description": "<p>Own our real-time platform: Kafka, Flink, Spark and Scala on Kubernetes and GCP. Infrastructure as code with Terraform.</p>"
+    },
+    {
+      "id": 1006,
+      "url": "https://example.com/jobs/1006",
+      "title": "Analytics Engineer",
+      "company_name": "Modern Data Stack Inc",
+      "category": "Data",
+      "job_type": "full_time",
+      "publication_date": "2026-11-01T11:20:00",
+      "candidate_required_location": "Worldwide",
+      "salary": "$95k - $120k",
+      "description": "<p>Model data with dbt and SQL on Snowflake, serve it in Looker. Git workflow and testing mindset.</p>"
+    },
+    {
+      "id": 1007,
+      "url": "https://example.com/jobs/1007",
+      "title": "Data Scientist",
+      "company_name": "Insight Partners AI",
+      "category": "Data",
+      "job_type": "full_time",
+      "publication_date": "2026-11-01T13:05:00",
+      "candidate_required_location": "UK",
+      "salary": "£60,000 - £80,000",
+      "description": "<p>Build predictive models with Python, pandas and scikit-learn. Strong SQL and machine learning fundamentals. Tableau for reporting.</p>"
+    },
+    {
+      "id": 1008,
+      "url": "https://example.com/jobs/1008",
+      "title": "Business Intelligence Analyst",
+      "company_name": "Northwind Labs",
+      "category": "Data",
+      "job_type": "full_time",
+      "publication_date": "2026-11-02T09:00:00",
+      "candidate_required_location": "Europe",
+      "salary": "",
+      "description": "<p>Design dashboards in Power BI with DAX. Advanced SQL and Excel skills required.</p>"
+    },
+    {
+      "id": 1009,
+      "url": "https://example.com/jobs/1009",
+      "title": "Principal Data Engineer",
+      "company_name": "Lakehouse Corp",
+      "category": "Data",
+      "job_type": "full_time",
+      "publication_date": "2026-11-02T15:30:00",
+      "candidate_required_location": "USA Only",
+      "salary": "$170k - $210k",
+      "description": "<p>Architect our lakehouse on Databricks with Spark (PySpark) and Delta Lake on AWS. Terraform, Python and SQL. Mentor the team.</p>"
+    },
+    {
+      "id": 1010,
+      "url": "https://example.com/jobs/1010",
+      "title": "Data Engineer",
+      "company_name": "Acme Analytics",
+      "category": "Data",
+      "job_type": "full_time",
+      "publication_date": "2026-11-03T08:10:00",
+      "candidate_required_location": "Africa / Europe",
+      "salary": "$60k - $80k",
+      "description": "<p>Maintain ETL jobs in Python and SQL orchestrated by Airflow on Azure. Docker for local development.</p>"
+    },
+    {
+      "id": 1011,
+      "url": "https://example.com/jobs/1011",
+      "title": "",
+      "category": "Data",
+      "publication_date": "2026-11-03T09:00:00",
+      "description": "Offre invalide volontaire (titre vide, entreprise absente) pour démontrer le contrat de données."
+    }
+  ]
+}

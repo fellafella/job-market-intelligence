@@ -1,0 +1,46 @@
+skill_name,skill_category,term
+Python,Language,python
+SQL,Language,sql
+Java,Language,java
+Scala,Language,scala
+Go,Language,golang
+JavaScript,Language,javascript
+Pandas,Library,pandas
+Scikit-learn,Library,scikit-learn|sklearn
+PyTorch,ML,pytorch
+TensorFlow,ML,tensorflow
+Machine Learning,ML,machine learning|ml
+LLM,ML,llm|llms|large language model
+Spark,Big Data,spark|pyspark
+Hadoop,Big Data,hadoop
+Kafka,Streaming,kafka
+Flink,Streaming,flink
+Airflow,Orchestration,airflow
+Dagster,Orchestration,dagster
+Prefect,Orchestration,prefect
+dbt,Transformation,dbt
+ETL / ELT,Concept,etl|elt
+Fivetran,Ingestion,fivetran
+Airbyte,Ingestion,airbyte
+Great Expectations,Data Quality,great expectations
+Snowflake,Warehouse,snowflake
+BigQuery,Warehouse,bigquery|big query
+Redshift,Warehouse,redshift
+Databricks,Platform,databricks
+Delta Lake,Platform,delta lake
+PostgreSQL,Database,postgres|postgresql
+MySQL,Database,mysql
+MongoDB,Database,mongodb|mongo
+AWS,Cloud,aws|amazon web services
+Azure,Cloud,azure
+GCP,Cloud,gcp|google cloud
+Docker,DevOps,docker
+Kubernetes,DevOps,kubernetes|k8s
+Terraform,DevOps,terraform
+CI/CD,DevOps,ci/cd|cicd
+Git,DevOps,git|github|gitlab
+Power BI,BI,power ?bi
+DAX,BI,dax
+Tableau,BI,tableau
+Looker,BI,looker
+Excel,BI,excel
